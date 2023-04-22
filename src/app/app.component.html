@@ -1,0 +1,46 @@
+<div class="container">
+  <h2>data bindding....</h2>
+  <h3>property bindding............</h3>
+  <h3 [innerHTML]="name"></h3>
+  <h3 [innerHTML]="age"></h3>
+  <hr>
+  <h3>string interpolation............</h3>
+  <h4>{{name}}</h4>
+  <h4>{{age}}</h4>
+
+  <h3>event bindding.............</h3>
+  name:--
+  <input type="text" name="" class="" id="" (click)="click1(n1)" (keyup)="click1(n1)" #n1>
+  <br>
+  
+</div>
+
+<div class="cntainer-fluid">
+<h1><mark>............. 2 way data bindding.............</mark></h1>
+<div class="form-group">
+  <label>roll:--</label> 
+  <input type="text" class="form-control"  [(ngModel)]="roll" >
+</div>
+<div class="form-group">
+ <label>location :-</label> 
+ <input type="text" class="form-control" [(ngModel)]="location">
+</div>
+</div>
+value:- roll is:{{roll}} and location is :- {{location}}
+
+<h1><mark>......array fetching.................</mark></h1>
+<p>array is : {{arr}}</p>
+<hr>
+
+<div class="cntainer-fluid">
+  <h1><mark>............. 2 way data bindding array fetching.............</mark></h1>
+  <div class="form-group">
+    <label>name2:--</label> 
+    <input type="text" class="form-control"  [(ngModel)]="arr.name2" >
+  </div>
+  <div class="form-group">
+   <label>location2 :-</label> 
+   <input type="text" class="form-control" [(ngModel)]="arr.location2">
+  </div>
+  </div>
+  value:- roll is:{{arr.name2}} and location is :- {{arr.location2}}
